@@ -1,2 +1,2 @@
 # DSA
-Data Structure and Algorithms - Practice Problems
+Data Structure and Algorithms
