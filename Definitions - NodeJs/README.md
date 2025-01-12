@@ -32,7 +32,8 @@ npx ts-node --inspect-brk src/`${sub-directory}`/`${fileName}.ts`
 [The Big-O Algorithm Complexity Cheat Sheet](https://www.bigocheatsheet.com/)
 [Algorithms & DS – Real Use Cases: PragmaticEngineer](https://blog.pragmaticengineer.com/data-structures-and-algorithms-i-actually-used-day-to-day/)
 
-
+### Visaul Go
+[Data structures Visualiser](https://visualgo.net/en)
 ### Resources: AVL Trees + Red Black Trees
 [Binary Search Tree Visualiser](https://visualgo.net/en/bst?slide=1)
 [AVL Tree - Animation](https://www.cs.usfca.edu/~galles/visualization/AVLtree.html)
