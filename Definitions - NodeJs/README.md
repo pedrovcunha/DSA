@@ -28,7 +28,7 @@ npx ts-node --inspect-brk src/`${sub-directory}`/`${fileName}.ts`
 
 ## Resources
 
-+ [DSA Roadmap] (https://coggle.it/diagram/W5E5tqYlrXvFJPsq/t/master-the-interview-click-here-for-course-link)
++ [DSA Roadmap](https://coggle.it/diagram/W5E5tqYlrXvFJPsq/t/master-the-interview-click-here-for-course-link)
 + [The Big-O Algorithm Complexity Cheat Sheet](https://www.bigocheatsheet.com/)
 + [Algorithms & DS – Real Use Cases: PragmaticEngineer](https://blog.pragmaticengineer.com/data-structures-and-algorithms-i-actually-used-day-to-day/)
 
