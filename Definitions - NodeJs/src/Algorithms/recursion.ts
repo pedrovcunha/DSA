@@ -65,14 +65,14 @@ function fibonacci(n: number): number
 function fibonacciIteractive(n: number): number {
     if (n <= 1) return n;
 
-    let sequence = [0, 1];
+    let sequence: number[] = [0, 1];
     for (let i = 2; i <= n; i++) {
-        const value = sequence[n-1] + sequence[n-2];
+        calculations++;
+        const value = sequence[i-2] + sequence[i-1];
         sequence.push(value);
     }
-
     // Returns last item of array;
-    return sequence.at(-1)!; // sequence[n]
+    return sequence[n];
 }
 
 // Nodes
