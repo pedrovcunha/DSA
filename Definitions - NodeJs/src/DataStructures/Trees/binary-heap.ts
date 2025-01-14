@@ -7,7 +7,7 @@
  * I want a value above 33 (anything on the same level and above will be above 33)
  * , on a binary tree this would be O(n)
  * 
- * Also really useful for Priory Queue, each element has a priory and elements with a higher primory are served first.
+ * Also really useful for Priority Queue, each element has a priory and elements with a higher priority are served first.
  */
 
 //           101
