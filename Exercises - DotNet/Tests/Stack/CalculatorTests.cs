@@ -1,4 +1,5 @@
-﻿using Presentation.Stack;
+﻿using System.Diagnostics;
+using Presentation.Stack;
 
 namespace Tests.Stack;
 
@@ -42,6 +43,19 @@ public class CalculatorTests
         
     }
 
+    [Fact]
+    public void Should_ExecuteWith10ms_WhenInvoked()
+    {
+        // Arrange & Act
+        var stopwatch = Stopwatch.StartNew();
+        var result = Calculator.Execute("8/2*3");
+        stopwatch.Stop();
+        
+        // Assert
+        var elapsedMs = stopwatch.ElapsedMilliseconds;
+        Assert.True(elapsedMs <= 10, $"Execution time was too long: {elapsedMs} ms");
+    }
+    
     public static IEnumerable<object[]> TestData()
     {
         yield return new object[] { "", 0 };
