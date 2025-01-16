@@ -81,7 +81,7 @@ class Hashtable {
             // if it's not an empty memory cell
             if (this.data[i] && this.data[i].length) {
                 // loop through potential hashtable collisions
-                if (this.data.length > 1) {
+                if (this.data[i].length > 1) {
                     for (let j = 0; j < this.data[i].length; j++) {
                         keysArray.push(this.data[i][j][0]);
                     }

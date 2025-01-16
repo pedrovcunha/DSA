@@ -27,6 +27,9 @@ class DoublyLinkedList {
         this.length = 1;
     }
 
+    /**
+     * Add to the end of the list
+     */
     append(value: number) {
         const newNode = new DLlNode(value);
         newNode.prev = this.tail;
@@ -36,6 +39,9 @@ class DoublyLinkedList {
         return this;
     }
 
+    /**
+     * Add to the begining of the list
+     */
     prepend(value: number) {
         const newNode = new DLlNode(value);
         newNode.next = this.head;
@@ -78,8 +84,8 @@ class DoublyLinkedList {
         let counter = 0;
         let currentNode = this.head;
         while(counter !== index){
-        currentNode = currentNode.next as DLlNode;
-        counter++;
+            currentNode = currentNode.next as DLlNode;
+            counter++;
         }
         return currentNode;
     }

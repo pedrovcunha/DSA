@@ -83,7 +83,7 @@ function fibonacciIteractive(n: number): number {
 // 3. The solutions of each subproblem can be conbined to solve the problem at hand.
 // Divide and coquer using recursion
 
-function reverseString(str: string): string {
+function reverseString1(str: string): string {
     if (str.length === 0) return '';
 
     return str.substring(1) + str.charAt(0)

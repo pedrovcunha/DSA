@@ -7,7 +7,7 @@ const graph2 = [[2], [2, 3], [0, 1, 3], [1, 2]]
 // Adjacent Matrix
 //...
 
-// Direct - nodes have direction point to another vs undirect graph (nodes are linked withouth any direction)
+// Direct - nodes have direction point to another vs undirect graph (nodes are linked without any direction)
 // Weighted(information in the link betwween nodes) vs unweighted graphs
 // cyclic (all connected, e.g. triangle), common with weighted graphs vs Acyclic not all connected (e.g. 3 nodes on L shape)
 

@@ -24,8 +24,8 @@ function partition(array: number[], pivot: number, left: number, right: number) 
 
     for (let i = left; i < right; i++) {
         if (array[i] < pivotValue) {
-        swap(array, i, partitionIndex);
-        partitionIndex++;
+            swap(array, i, partitionIndex);
+            partitionIndex++;
         }
     }
     swap(array, right, partitionIndex);

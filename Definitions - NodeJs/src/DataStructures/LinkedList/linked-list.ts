@@ -64,7 +64,7 @@ class LinkedList {
             return this.append(value);
         }
         const newNode = new LlNode(value);
-        const leader = this.tranverseToIndex(index-1)
+        const leader = this.traverseToIndex(index-1)
         const holdingPointer = leader.next;
         leader.next = newNode;
         newNode.next = holdingPointer;
@@ -72,7 +72,7 @@ class LinkedList {
 
     }
 
-    tranverseToIndex(index: number) {
+    traverseToIndex(index: number) {
         let counter = 0;
         let currentNode: LlNode = this.head;
         while(counter !== index) {
@@ -91,7 +91,7 @@ class LinkedList {
             return;
         }
 
-        const leader = this.tranverseToIndex(index - 1);
+        const leader = this.traverseToIndex(index - 1);
         const unwantedNode = leader.next;
         leader.next = unwantedNode?.next ? unwantedNode.next : null;
         this.length--;
@@ -104,8 +104,10 @@ class LinkedList {
     reverse() {
         if (!this.head.next) return this.head;
 
-        let first = this.head;
+        // Set the new tail before going through the whole list
         this.tail = this.head;
+
+        let first = this.head;        
         let second = this.head.next;
         while(second) {
             const temp = second.next;

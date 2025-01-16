@@ -53,6 +53,7 @@ class Queue {
         if (this.first === this.last) {
             this.last = null;
         }
+        
         const holdingPointer = this.first;
         this.first = holdingPointer.next;
         this.length++;

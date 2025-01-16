@@ -69,6 +69,9 @@ class MyArray {
      * @param index 
      */
     shiftItems(index: number) {
+        // shift all items to the left, apart from the last one that will be repeated
+        // e.g. [0, 1, 2, 3, 4, 5], we choose to remove index 2
+        // After the for we have: [0, 1, 3, 4, 5, 5], we shifted all elements to the left and now we can delete the last element
         for (let i = index; i < this.length - 1; ++i) {
             this.data[i] = this.data[i+1];
         }
