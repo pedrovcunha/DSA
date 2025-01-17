@@ -86,5 +86,5 @@ function fibonacciIteractive(n: number): number {
 function reverseString1(str: string): string {
     if (str.length === 0) return '';
 
-    return str.substring(1) + str.charAt(0)
+    return reverseString1(str.substring(1)) + str.charAt(0);
 }

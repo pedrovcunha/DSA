@@ -70,6 +70,8 @@ A process to restore the heap property when an element violates it.
 
 **1. Priority Queue:**
 Binary heaps are commonly used to implement priority queues where elements with the highest/lowest priority are retrieved efficiently.
+- Min Heap to find the K largest
+- Max Heap to find the K smallest
 
 **2. Heapsort Algorithm:**
 A sorting algorithm based on binary heaps that achieves O(n log n) time complexity.

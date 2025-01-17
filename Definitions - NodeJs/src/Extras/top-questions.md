@@ -1,7 +1,7 @@
 # Top Interview Questions
 List of some of the top interview questions focusing on data structures and algorithms:
 
-- [#344 Reverse String] (https://leetcode.com/problems/reverse-string)
+- [#344 Reverse String](https://leetcode.com/problems/reverse-string)
 - [#412 Fizz Buzz](https://leetcode.com/problems/fizz-buzz) 
 - [#136 Single Number](https://leetcode.com/problems/single-number)
 - [#104 Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree)
