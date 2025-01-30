@@ -43,24 +43,24 @@ You can use the two-pointers technique in the following scenarios:
 
 ## How Does It Work?
 
-The general idea involves two pointers (`i` and `j`) and the way they traverse the data structure. The movement of these pointers is tailored to the problem.
+The general idea involves two pointers (`left` and `right`) and the way they traverse the data structure. The movement of these pointers is tailored to the problem.
 
 ### Opposite Direction Example
 
-- Start one pointer at the beginning (`i = 0`) and the other at the end (`j = n - 1`).
+- Start one pointer at the beginning (`left = 0`) and the other at the end (`right = n - 1`).
 - Move the pointers closer together based on a condition.
 
 Example Problem: Check if a sorted array contains two numbers that sum to a target.
 
 ```typescript
 function twoSumSorted(arr: number[], target: number): boolean {
-    let i = 0, j = arr.length - 1;
+    let left = 0, right = arr.length - 1;
 
-    while (i < j) {
-        const sum = arr[i] + arr[j];
+    while (left < right) {
+        const sum = arr[left] + arr[right];
         if (sum === target) return true;
-        else if (sum < target) i++;
-        else j--;
+        else if (sum < target) left++;
+        else right--;
     }
 
     return false;

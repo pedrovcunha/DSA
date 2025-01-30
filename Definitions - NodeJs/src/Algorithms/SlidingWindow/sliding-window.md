@@ -5,6 +5,7 @@
 The **sliding window algorithm** is a technique for solving problems that involve **subarrays** or **substrings** in a linear data structure (like arrays or strings). Instead of recomputing results for overlapping subarrays or substrings, this technique **slides a window** across the data to efficiently maintain the desired result.
 
 The window can be **fixed** or **dynamic**, depending on the problem requirements.
+Its a variation of __Two-Pointers__
 
 ---
 

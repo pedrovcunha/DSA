@@ -1,5 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-using Presentation.Stack;
+using Presentation.ArraysAndHashing;
 
-Console.WriteLine(Calculator.Execute("2+3*4"));
+Console.WriteLine(TrappingRainWater.Execute(new int[] { 0,1,0,2,1,0,1,3,2,1,2,1 }));

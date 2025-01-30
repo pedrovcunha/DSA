@@ -1,9 +1,8 @@
-// O(n log n)
+// O(n log n) - divide and conquer
 // fast on average
-// if the pivet is the lowest or biggest value
+// if the pivot is the lowest or biggest value
 // it becomes the worse use case of O(n2)
 function quickSort(array: number[], left: number, right: number) {
-    const len = array.length;
     let pivot;
     let partitionIndex;
   
@@ -28,6 +27,7 @@ function partition(array: number[], pivot: number, left: number, right: number) 
             partitionIndex++;
         }
     }
+
     swap(array, right, partitionIndex);
     return partitionIndex;
 }
@@ -38,6 +38,7 @@ function swap(array: number[], firstIndex: number, secondIndex: number) {
     array[secondIndex] = temp;
 }
   
-//Select first and last index as 2nd and 3rd parameters
-quickSort(numbers, 0, numbers.length - 1);
+// Select first and last index as 2nd and 3rd parameters
+const numbersi = [99, 44, 6, 2, 1, 5, 63, 87, 283, 4, 0]
+quickSort(numbersi, 0, numbers.length - 1);
 console.log(numbers);

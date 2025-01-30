@@ -67,7 +67,6 @@ function fibonacciIteractive(n: number): number {
 
     let sequence: number[] = [0, 1];
     for (let i = 2; i <= n; i++) {
-        calculations++;
         const value = sequence[i-2] + sequence[i-1];
         sequence.push(value);
     }
