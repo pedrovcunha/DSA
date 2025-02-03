@@ -23,7 +23,7 @@ public static class Palindrome
         var regex = new Regex("/[^a - z0 - 9]/gi");
         var str = regex.Replace(s, "").ToLower();
         var isOdd = (str.Length % 2) > 0;
-        var middle = (int)Math.Floor((decimal)str.Length / 2);
+        var middle = (int) Math.Floor((decimal)str.Length / 2);
 
         var p1 = isOdd ? middle : middle - 1;
         var p2 = isOdd ? middle : middle;
