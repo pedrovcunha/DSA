@@ -6,7 +6,7 @@ public class ReverseLinkedList2Tests
 {
     [Theory]
     [MemberData(nameof(TestData))]
-    public void Should_CompareStrings_WhenBackspacingIsPartOfString(LNode head, int left, int right, int[] expected)
+    public void Should_ReverseList_WhenBoundariesAreSet(LNode head, int left, int right, int[] expected)
     {
         // Arrange & Act
         var result = ReverseLinkedList2.Execute(head, left, right);
