@@ -22,10 +22,10 @@ public class FlattenMultilevelDoublyLinkedListTests
         var node2 = new DlNode(2);
         head.next = node2;
         node2.prev = head;
-        
+
         var child1 = new DlNode(3);
         head.child = child1;
-        
+
         yield return [
             head,
             new int[]{1, 3, 2}
@@ -34,7 +34,7 @@ public class FlattenMultilevelDoublyLinkedListTests
         var n1 = new DlNode(1);
         var n2 = new DlNode(2);
         var n3 = new DlNode(3);
-        
+
         n1.child = n2;
         n2.child = n3;
 

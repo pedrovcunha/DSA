@@ -48,7 +48,7 @@ class MyArray {
     }
 
     /**
-     * 
+     * Delete the last item of the array and return it
      * @returns deleted item
      */
     pop() {

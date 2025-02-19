@@ -55,6 +55,7 @@ class Hashtable {
         if (!this.data[address]) {
             this.data[address] = [];
         }
+        
         this.data[address].push([key, value]);
         // console.log(this.data);
         return this.data;

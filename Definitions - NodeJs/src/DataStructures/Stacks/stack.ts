@@ -50,10 +50,11 @@ class Stack {
     }
 
     public pop() {
-        if (this.length === 0) { return null;}
+        if (this.length === 0) { return null; }
         if (this.top === this.bottom) { 
             this.bottom = null;
         }
+        
         this.top = this.top!.next;
         this.length--;
         return this;

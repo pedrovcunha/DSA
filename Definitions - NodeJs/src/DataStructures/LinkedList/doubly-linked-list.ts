@@ -103,12 +103,12 @@ class DoublyLinkedList {
 }
   
   let myDLinkedList = new LinkedList(10);
-  myLinkedList.append(5);
-  myLinkedList.append(16);
-  myLinkedList.prepend(1);
-  myLinkedList.insert(2, 99);
-  myLinkedList.insert(20, 88);
-  myLinkedList.remove(2);
+  myDLinkedList.append(5);
+  myDLinkedList.append(16);
+  myDLinkedList.prepend(1);
+  myDLinkedList.insert(2, 99);
+  myDLinkedList.insert(20, 88);
+  myDLinkedList.remove(2);
   
   
   

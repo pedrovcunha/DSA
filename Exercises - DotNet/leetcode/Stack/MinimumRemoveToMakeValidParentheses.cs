@@ -37,14 +37,23 @@ public class MinimumRemoveToMakeValidParentheses
 
     public string Execute(string s)
     {
-        var res = s.Split("");
+        var res = s.Select(c => c.ToString()).ToList();
         var stack = new Stack<int>();
 
-        for (var i = 0; i < res.Length; i++)
+        for (var i = 0; i < res.Count; i++)
         {
-            if (res[i] == "(") stack.Push(i);
-            else if (res[i] == ")" && stack.Count > 0) stack.Pop();
-            else if (res[i] == ")") res[i] = "";
+            switch (res[i])
+            {
+                case "(":
+                    stack.Push(i);
+                    break;
+                case ")" when stack.Count > 0:
+                    stack.Pop();
+                    break;
+                case ")":
+                    res[i] = "";
+                    break;
+            }
         }
 
         while (stack.Count > 0)

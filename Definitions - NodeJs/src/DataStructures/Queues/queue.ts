@@ -56,7 +56,7 @@ class Queue {
         
         const holdingPointer = this.first;
         this.first = holdingPointer.next;
-        this.length++;
+        this.length--;
         return this;
     }
 }
